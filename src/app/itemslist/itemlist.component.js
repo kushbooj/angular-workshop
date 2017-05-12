@@ -6,7 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var item_model_1 = require("../item.model");
+var item_model_1 = require("../model/item.model.ts");
 var ItemListComponent = (function () {
     function ItemListComponent() {
         this.items = [new item_model_1.Item('Harry Potter part 1', 500, 10), new item_model_1.Item('Sherlock Holmes Part 1', 300, 5)];
