@@ -6,6 +6,7 @@ import { ItemDetailComponent }  from './itemdetail/itemdetail.component'
 import { ItemListComponent }  from './itemslist/itemlist.component';
 import { OrdersComponent }  from './orders/oders.component';
 import { PageNotFoundComponent }  from './pagenotfound.component';
+import {ItemService} from "./services/item.service";
 
 
 // First match Win
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
 @NgModule({
   imports:      [ BrowserModule, RouterModule.forRoot(appRoutes) ],
   declarations: [ AppComponent, ItemDetailComponent, ItemListComponent, PageNotFoundComponent, OrdersComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [ItemService]
 })
 export class AppModule { }

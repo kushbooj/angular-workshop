@@ -13,6 +13,7 @@ var itemdetail_component_1 = require("./itemdetail/itemdetail.component");
 var itemlist_component_1 = require("./itemslist/itemlist.component");
 var oders_component_1 = require("./orders/oders.component");
 var pagenotfound_component_1 = require("./pagenotfound.component");
+var item_service_1 = require("./services/item.service");
 // First match Win
 var appRoutes = [
     { path: 'item/:id', component: itemdetail_component_1.ItemDetailComponent },
@@ -40,7 +41,8 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(appRoutes)],
         declarations: [app_component_1.AppComponent, itemdetail_component_1.ItemDetailComponent, itemlist_component_1.ItemListComponent, pagenotfound_component_1.PageNotFoundComponent, oders_component_1.OrdersComponent],
-        bootstrap: [app_component_1.AppComponent]
+        bootstrap: [app_component_1.AppComponent],
+        providers: [item_service_1.ItemService]
     })
 ], AppModule);
 exports.AppModule = AppModule;
