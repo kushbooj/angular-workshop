@@ -35,6 +35,6 @@ const appRoutes: Routes = [
   imports:      [ BrowserModule, RouterModule.forRoot(appRoutes) ],
   declarations: [ AppComponent, ItemDetailComponent, ItemListComponent, PageNotFoundComponent, OrdersComponent, PricePipe, DiscountDirective ],
   bootstrap:    [ AppComponent ],
-  providers: [ItemService]
+  providers: [{provide: ItemService, useValue: new ItemService(5)}]
 })
 export class AppModule { }

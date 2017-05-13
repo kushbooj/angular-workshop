@@ -13,4 +13,8 @@ export class ItemListComponent {
     constructor(private itemService: ItemService) {
         this.items = itemService.getItems();
     }
+
+    getItemValue() {
+        return this.itemService.getValue();
+    }
 }
